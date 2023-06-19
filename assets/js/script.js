@@ -1,5 +1,14 @@
 // Assignment code here
 
+function myFunction() { 
+  var x = document.getElementById("myDIV"); 
+  if (x.style.display === "none") { 
+    x.style.display = "block"; 
+  } else { 
+    x.style.display = "none"; 
+  } 
+}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -15,3 +24,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
