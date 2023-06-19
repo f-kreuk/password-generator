@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
@@ -24,24 +25,29 @@
           
           <fieldset>
             <legend>Choose your password criteria:</legend>
-            
+          
+            <div class="slidecontainer"> 
+              <p>Length: <span id="length"></span></p>
+              <input type="range" min="8" max="128" value="64" class="slider" id="myRange">
+             <br> </div>
+              <p><br></p>
             <div>        
               <input type="checkbox" id="uppercase" name="uppercase" checked>
                 <label for="uppercase">Uppercase</label>            
             </div>
 
             <div>
-              <input type="checkbox" id="lowercase" name="lowercase">
+              <input type="checkbox" id="lowercase" name="lowercase" checked>
                 <label for="lowercase">Lowercase</label>
             </div>
 
             <div>
-              <input type="checkbox" id="numbers" name="numbers">
+              <input type="checkbox" id="numbers" name="numbers" checked>
                 <label for="numbers">Numbers</label>
               </div>
   
             <div>
-              <input type="checkbox" id="symbols" name="symbols">
+              <input type="checkbox" id="symbols" name="symbols" checked>
                 <label for="symbols">Symbols</label>
               </div>
     
