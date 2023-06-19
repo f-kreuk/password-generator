@@ -135,3 +135,26 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
+/* Below is the styling for the checkboxes for the criteria*/
+p,
+label {
+font: 1rem sans-serif;
+background-color: #f9fbfd;
+color: hsl(206, 17%, 28%);
+}
+
+input {
+margin: 0.4rem;
+}
+
+fieldset {
+  border-radius: 6px;
+  border: 2px dashed #c0c7cf;
+}
+
+legend {
+  text-align: left;
+  font: 1rem sans-serif;
+  color: hsl(206, 17%, 28%);
+}
