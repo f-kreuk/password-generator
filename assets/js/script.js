@@ -9,10 +9,7 @@ let booleonlowercase = false;
 let booleonuppercase = false;
 let booleonnumbers = false;
 let booleonsymbols = false;
-
-console.log(includelowercase);
-console.log(includeuppercase);
-console.log(booleonlowercase);
+let initialvalue = 0;
 
 // Below is the code that will hide or display the password criteria contained within
 // myDIV when the Generate Password button is pressed.
@@ -93,6 +90,20 @@ function checkUppercase()
           console.log("symbols " + booleonsymbols);
           }
         }
+
+// Below is the code that gathers the value for password length.
+
+function checkValue() 
+{
+  var initialvalue = document.getElementById('myRange').valueAsNumber;
+  console.log(initialvalue);
+}
+
+// Below is the code that decides which characters are included in our pool for the password generation.
+
+let passwordpool = "";
+
+
 
 // Below is the code that generates the random string
 
