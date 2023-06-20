@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -21,33 +21,33 @@
       <!-- This section contains the password criteria, which will hide and display 
         when the "Generate Password" button is selected. -->  
  
-        <div id="myDIV"> <br> 
+        <div id="myDIV" style="display:none"> <br> 
           
           <fieldset>
             <legend>Choose your password criteria:</legend>
           
             <div class="slidecontainer"> 
               <p>Length: <span id="length"></span></p>
-              <input type="range" min="8" max="128" value="64" class="slider" id="myRange">
+              <input type="range" min="8" max="128" value="8" class="slider" id="myRange">
              <br> </div>
               <p><br></p>
             <div>        
-              <input type="checkbox" id="uppercase" name="uppercase" checked>
+              <input type="checkbox" onclick="checkUppercase()" id="uppercase" name="uppercase">
                 <label for="uppercase">Uppercase</label>            
             </div>
 
             <div>
-              <input type="checkbox" id="lowercase" name="lowercase" checked>
+              <input type="checkbox" onclick="checkLowercase()" id="lowercase" name="lowercase">
                 <label for="lowercase">Lowercase</label>
             </div>
 
             <div>
-              <input type="checkbox" id="numbers" name="numbers" checked>
+              <input type="checkbox" onclick="checkNumbers()" id="numbers" name="numbers">
                 <label for="numbers">Numbers</label>
               </div>
   
             <div>
-              <input type="checkbox" id="symbols" name="symbols" checked>
+              <input type="checkbox" onclick="checkSymbols()" id="symbols" name="symbols">
                 <label for="symbols">Symbols</label>
               </div>
     
@@ -70,6 +70,6 @@
         </div>
       </div>
     </div>
-    <script src="../assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
