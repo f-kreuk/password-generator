@@ -117,7 +117,6 @@ function checkUppercase()
 function checkValue() 
 {
   var initialvalue = document.getElementById('myRange').valueAsNumber;
-  console.log(initialvalue);
   createpool();
 }
 
@@ -133,7 +132,8 @@ function createpool()
 
   // Below is the code that generates the random string
 
-
+  initialvalue = document.getElementById('myRange').valueAsNumber;
+  console.log(initialvalue);
   const generateRandomString = (length) => { let result = '';
   const characters = (includeuppercase + includelowercase + includenumbers + includesymbols);
   const charactersLength = characters.length;
@@ -141,7 +141,7 @@ function createpool()
   }
   return result;
   };
-  console.log(8);
+  console.log(generateRandomString(initialvalue));
  }
 
 
