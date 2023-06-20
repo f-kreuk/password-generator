@@ -118,7 +118,6 @@ function checkValue()
 {
   var initialvalue = document.getElementById('myRange').valueAsNumber;
   console.log(initialvalue);
-  initialvalue = 
   createpool();
 }
 
