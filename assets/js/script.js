@@ -139,12 +139,20 @@ function createpool()
   const charactersLength = characters.length;
   for (let i = 0; i < length; i++) { result += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
-  return result;
-  };
+  return result; };
+  
+  // Below is the code that updates password id text to be the generated password
+
+  function changeContent() {
+
+    var x = document.getElementById('password');
+
+    x.value = generateRandomString(initialvalue);
+  } 
+  changeContent();
   console.log(generateRandomString(initialvalue));
  }
 
-// Below is the code that updates password id text to be the generated password
 
 
 

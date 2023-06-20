@@ -12,5 +12,7 @@ For the numerical slider, I utilized the following resource/tutorial as a starti
 
 For the function to change a booleon variable value when a checkbox was checked or not, I utilized the following resource/tutorial as a starting place: https://html.form.guide/html-form/html-checkbox-events/
 
+To change the displayed content within the generate password box, I utilized the following resource/tutorial as a starting place: https://www.geeksforgeeks.org/how-to-change-the-content-of-a-textarea-using-javascript/
+
 To generate the random string, I utilized the below tutorial/resource as a starting place: https://www.slingacademy.com/article/ways-to-generate-random-strings-in-javascript/#:~:text=We%20can%20use%20the%20Math,using%20the%20charAt()%20function
 
